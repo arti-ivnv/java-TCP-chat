@@ -15,7 +15,7 @@ public class Client implements Runnable {
     public void run() {
         // TODO Auto-generated method stub
         try {
-            Socket client = new Socket("192.168.1.8", 9999);
+            Socket client = new Socket("121.0.0.1", 9999);
             out = new PrintWriter(client.getOutputStream(), true);
             in = new BufferedReader(new InputStreamReader(client.getInputStream()));
 
